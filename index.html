@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script defer src="script.js"></script>
+    <title>Rock, paper, scissor</title>
+</head>
+<body>
+    
+    <h1>Welcome to "Rock, paper, scissor".
+        <br>
+        Good luck!
+    </h1>
+    <div class="container">
+        <div class="center">
+            <section class="column" id="user"></section>
+            <h2>Player (choose your bet)</h2>
+              <div class="icons">
+                <button class="user-button" id="rock" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/1527/1527445.png" alt="rock">
+                </button>
+                <span class="value">Rock</span>
+            </div>
+              <div class="icons">
+                <button class="user-button" id="paper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/889/889822.png" alt="paper">
+                </button>
+                <span class="value">Paper</span>
+            </div>
+              <div class="icons"> 
+                <button class="user-button" id="scissors">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2907/2907054.png" alt="scissor">
+                </button>
+                <span class="value">Scissors</span>
+            </div>
+            <div id="user-score">
+                <img src="https://cdn-icons.flaticon.com/png/512/4442/premium/4442309.png?token=exp=1657700212~hmac=0edd0288a5ac3ccc954e8e12d1da4929" alt="winner" id="win-icon"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/5442/premium/5442708.png?token=exp=1657700733~hmac=308fe237cadbb43a2a2ac513309ec7c2" alt="loser" id="lose-icon"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/3281/premium/3281346.png?token=exp=1657712471~hmac=bc10cf4e9d43d0518956d5b9eee1586a" alt="tie" id="tie-icon"/>
+                <p id="user-bet">Selected bet: </p>
+                <p id="user-wins">Total games won: </p>
+                <p id="user-total">Total round points: </p>
+            </div>
+        </section>
+            <section class="column" id="calculator">
+                <h3>Computer (auto-selection)</h3>
+              <div class="icons">
+                <button class="calc-button" id="rock">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1527/1527445.png" alt="rock">
+                </button>
+                <span class="value">Rock</span>
+            </div>
+              <div class="icons">
+                <button class="calc-button" id="paper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/889/889822.png" alt="paper">
+                </button>
+                <span class="value">Paper</span>
+            </div>
+              <div class="icons">
+                 <button class="calc-button" id="scissors">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2907/2907054.png" alt="scissor">
+                </button>
+                <span class="value">Scissors</span>
+            </div>
+            <div id="calc-score">
+                <img src="https://cdn-icons.flaticon.com/png/512/4442/premium/4442309.png?token=exp=1657700212~hmac=0edd0288a5ac3ccc954e8e12d1da4929" alt="winner" id="win-icon"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/5442/premium/5442708.png?token=exp=1657700733~hmac=308fe237cadbb43a2a2ac513309ec7c2" alt="loser" id="lose-icon"/>
+                <img src="https://cdn-icons.flaticon.com/png/512/3281/premium/3281346.png?token=exp=1657712471~hmac=bc10cf4e9d43d0518956d5b9eee1586a" alt="tie" id="tie-icon"/>
+                <p id="calc-bet">Selected bet: </p>
+                <p id="calc-wins">Total games won: </p>
+                <p id="calc-total">Total round points: </p>
+            </div>
+        </section>
+         <div id="game-stats">
+            <p id="rounds-played"></p>
+            <p id="remaining-rounds"></p>
+            <p id="round-result"></p>
+            <p id="round-winner"></p>
+            <p id="total-games"></p>
+         </div> 
+         <div id="start-button">
+            <button id="next-round" class="button">Press for next round</button>
+            <button id="start-game" class="button">Start game</button>
+         </div>
+     </div>       
+</body>
+</html>
