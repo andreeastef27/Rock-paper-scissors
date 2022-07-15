@@ -151,7 +151,7 @@ function PaperBet(){
 function ScissorsBet(){
   paperBtn.disabled=true;
   rockBtn.disabled=true;
-  paper=true;
+  scissors=true;
   const calcValue=calcRandom(array);
   userBet.innerHTML="Scissors";
   calcBet.innerHTML=calcValue;
